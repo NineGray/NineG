@@ -1,0 +1,30 @@
+一、git提交代码：
+1:
+git add <file> -- 将状态改变的代码提交至缓存
+git add -u + 路径：将修改过的被跟踪代码提交缓存
+git add -A + 路径: 将修改过的未被跟踪的代码提交至缓存
+
+例如：
+git add -u src/components
+将 src/components 目录下被跟踪的已修改过的代码提交到缓存中
+
+git add -A src/components
+将 src/components 目录下未被跟踪的已修改过的代码提交到缓存中
+
+2:
+git commit -m “修改项目代码” -- 将代码提交到本地仓库
+
+3：
+git push   （推送代码到master分支）-- 将代码推送到远程仓库
+git push origin dev     推送代码到dev分支
+
+二、关联一个远程仓库
+git remote add origin git@github.com:you/project.git
+
+三、分支相关
+$ git checkout -b dev -- 创建并切换到dev分支
+
+$ git branch dev -- 仅创建分支
+$ git checkout dev -- 仅切换分支
+
+$ git branch -- 列出所有分支并查看当前分支
